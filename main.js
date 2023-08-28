@@ -77,6 +77,7 @@ doubleCheeseBurgerAdd.onclick = ()=>{
         if(doubleCheeseBurgerQuantity.value < 1){
             doubleCheeseBurgerMinus.style = 'display: none;';
         }
+    }
 
     // ----------------------ادخال التشيز برجر في القائمة------------\\
 
