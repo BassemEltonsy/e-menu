@@ -55,12 +55,10 @@ doubleCheeseBurgerAdd.onclick = ()=>{
     doubleCheeseBurgerAdd.style.background = 'blue';
     doubleCheeseBurgerAdd.style.display = 'none';
     doubleCheeseBurgerRemove.style.display = 'block';
-    result1 =  (+doubleCheeseBurgerQuantity.value * +doubleCheeseBurgerActualPrice.innerHTML);
-    actualTotal.innerHTML = Math.abs(result1 + +actualTotal.innerHTML);
+    result =  (+doubleCheeseBurgerQuantity.value * +doubleCheeseBurgerActualPrice.innerHTML);
+    actualTotal.innerHTML = Math.abs(result + +actualTotal.innerHTML);
     doubleCheeseBurgerCounter.style.display = 'none';
     
-    }
-
     //--------- زراير الزائد والناقص في الدبل تشيز برجر ------- \\
 
     doubleCheeseBurgerPlus.onclick = ()=>{
@@ -85,7 +83,7 @@ doubleCheeseBurgerAdd.onclick = ()=>{
     let doubleCheeseBurgerObject = {
         quantity: doubleCheeseBurgerQuantity.value,
         name: 'دبل تشيز برجر',
-        price: result1,
+        price: result,
     }
     let DCBtable = `
         <tr>
@@ -104,8 +102,8 @@ doubleCheeseBurgerRemove.onclick = ()=>{
     doubleCheeseBurgerAdd.style.background = 'green';
     doubleCheeseBurgerAdd.innerText ='اضافة الى طلباتك';
     doubleCheeseBurgerRemove.style.display = 'none';
-    result1 = (+doubleCheeseBurgerActualPrice.innerHTML * +doubleCheeseBurgerQuantity.value);
-    actualTotal.innerHTML = Math.abs(result1 - +actualTotal.innerHTML);
+    result = (+doubleCheeseBurgerActualPrice.innerHTML * +doubleCheeseBurgerQuantity.value);
+    actualTotal.innerHTML = Math.abs(result - +actualTotal.innerHTML);
     doubleCheeseBurgerCounter.style.display = 'flex';
     doubleCheeseBurgerAdd.style.display = 'block';
 }
@@ -127,8 +125,8 @@ normalBurgerAdd.onclick = ()=>{
     normalBurgerAdd.innerText = 'تم اضافة العنصر بنجاح';
     normalBurgerRemove.style.display = 'block';
     normalBurgerAdd.style.display = 'none';
-    result2 = (+normalBurgerQuantity.value * +normalBurgerActualPrice.innerHTML);
-    actualTotal.innerHTML = Math.abs(result2 + +actualTotal.innerHTML);
+    result = (+normalBurgerQuantity.value * +normalBurgerActualPrice.innerHTML);
+    actualTotal.innerHTML = Math.abs(result + +actualTotal.innerHTML);
     normalBurgerCounter.style.display = 'none';
 
 
@@ -139,8 +137,8 @@ normalBurgerRemove.onclick = ()=>{
     normalBurgerAdd.innerText = 'اضافة الى طلباتك';
     normalBurgerRemove.style.display = 'none';
     normalBurgerAdd.style.display = 'block';
-    result2 = (+normalBurgerActualPrice.innerHTML * +normalBurgerQuantity.value);
-    actualTotal.innerHTML = Math.abs(result2 - +actualTotal.innerHTML);
+    result = (+normalBurgerActualPrice.innerHTML * +normalBurgerQuantity.value);
+    actualTotal.innerHTML = Math.abs(result - +actualTotal.innerHTML);
     normalBurgerCounter.style.display = 'flex';
 }
         // ----------------ادخال البرجر العادي في القائمة--------\\
@@ -148,7 +146,7 @@ normalBurgerRemove.onclick = ()=>{
     let normalBurgerObject = {
         quantity: normalBurgerQuantity.value,
         name: 'برجر عادي',
-        price: result2,
+        price: result,
         }
     
     
