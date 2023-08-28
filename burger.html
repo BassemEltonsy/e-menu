@@ -3,14 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <title>Burger Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Paradise Menu</title>
 </head>
 <body>
+
+    <!----------------------- bottom navbar ---------------->
+
+    <div class="bottom-nav">
+        <div class="total">
+            <p>:اجمالي المبلغ</p>
+            <small>0</small>
+        </div>
+        <div class="bottom-nav-btns">
+            <button class="show-orders" id="show-orders">عرض طلباتك</button>
+            <button class="reset" id="total-reset">ازالة جميع العناصر</button>
+        </div>
+    </div>
+
     <!------------------------- orders bar ------------------->
 
     <div class="orders-bar" id="orders-bar">
@@ -20,158 +34,107 @@
             <hr>
         </div>
         <div class="orders-bar-content">
-            <div class="order">
-                <p id="orders-bar-quantity">x1</p>
-                <p id="product-name">بيتزا سوبر سوبريم</p>
-                <p id="orders-bar-price">800 LE</p>
-            </div>
-            <div class="order">
-                <p id="orders-bar-quantity">x2</p>
-                <p id="product-name">طبق مكرونة بشامل</p>
-                <p id="orders-bar-price">100 LE</p>
-            </div>
-            <div class="order">
-                <p id="orders-bar-quantity">x3</p>
-                <p id="product-name">ورق عنب</p>
-                <p id="orders-bar-price">200 LE</p>
-            </div>
-            <div class="order">
-                <p id="orders-bar-quantity">x3</p>
-                <p id="product-name">بيبسي كانز</p>
-                <p id="orders-bar-price">30 LE</p>
-            </div>
-            <hr>
-            <div class="orders-bar-total">
-                <h2>:الاجمالي</h2>
-                <h2>150 LE</h2>
-            </div>
             
         </div>
     </div>
 
+    <!------------------------- container -------------------->
 
-    <!------------------------- top nav -------------------->
+    <div class="container">
 
-    <div class="top-nav">
-        <a href="index.html" class="top-nav-link">المشويات</a>
-        <a href="index.html" class="top-nav-link">البيتزا</a>
-        <a href="index.html" class="top-nav-link">ركن الشرقي</a>
-        <a href="index.html" class="top-nav-link">اطباق مشتعلة</a>
-        <a href="index.html" class="top-nav-link">اطباق خاصة دجاج</a>
-        <a href="index.html" class="top-nav-link">اطباق خاصة لحوم</a>
-        <a href="index.html" class="top-nav-link">اطباق خاصة بحريات</a>
-        <a href="burger.html" class="top-nav-link">برجر</a>
+    <!--------------------------- welcome -------------------->
+    
+        <div class="welcome">
+            <div class="mainText">
+                <h3>مرحباُ بكم <br> في القائمة الالكترونية</h3>
+                <h1>لمطعم باراديز</h1>
+                <p>هتلاقي هنا جميع اسعار الوجبات مجدده يوميا</p>
+                <a href="#categories" class="start">يلا بينا</a>
+            </div>
+        </div>
+
+        <!---------------------------- الاصناف ------------------------>
+
+            <div id="categories" class="categories-container">
+                <div class="categories-header">
+                    <h2>تحب تاكل ايه النهارده؟</h2>
+                    <p>اختار صنف للإستمرار</p>
+                </div>
+                <a href="#">
+                    <div class="categories-content">
+                    <div class="categories-card">
+                        <img src="pizza.jpg" alt="">
+                        <div class="categories-card-text">
+                            <h3>بيتزا باراديز</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="categories-card">
+                        <img src="mashwyat.jpg" alt="">
+                        <div class="categories-card-text">
+                            <h3>مشويات باراديز</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="categories-card">
+                        <img src="طريقة-عمل-طاجن-البامية-باللحمة.webp" alt="">
+                        <div class="categories-card-text">
+                            <h3>ركن شرقي</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="categories-card">
+                        <img src="hot.jpg" alt="">
+                        <div class="categories-card-text">
+                            <h3>أطباق مشتعلة</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="categories-card">
+                        <img src="hot s=chicken.jpeg" alt="">
+                        <div class="categories-card-text">
+                            <h3>أطباق خاصة فراخ</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="categories-card">
+                        <img src="لحوم.jpg" alt="">
+                        <div class="categories-card-text">
+                            <h3>أطباق خاصة لحوم</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="categories-card">
+                        <img src="بحريات.jpg" alt="">
+                        <div class="categories-card-text">
+                            <h3>أطباق خاصة بحريات</h3>
+                        </div>
+                    </div>
+                </a>
+                    
+                <a href="burger.html">
+                        <div class="categories-card">
+                        <img src="BurgerMain.jpg" alt="">
+                        <div class="categories-card-text">
+                            <h3>برجر</h3>
+                        </div>
+                    </div>
+                </a>
+                </div>
+            </div>
+
+        <!---------------- burger ---------------->
+
+        
+        
     </div>
 
-    <!----------------------- bottom navbar ---------------->
-
-    <div class="bottom-nav">
-        <div class="total">
-            <p>:اجمالي المبلغ</p>
-            <small id="actual-total">0</small>
-        </div>
-        <div class="bottom-nav-btns">
-            <button class="show-orders" id="show-orders">عرض طلباتك</button>
-            <button class="reset" id="total-reset">ازالة جميع العناصر</button>
-        </div>
-    </div>
-
-    <!----------------------- قائمة البرجر --------------->
-
-    <div class="burger">
-        <div class="burger-text">
-            <h2>قائمة البـرجـر</h2>
-        </div>
-        <div class="burger-content">
-            <div class="card" id="double-cheese-burger">
-                <img src="360_F_114668030_XtASybnK2Hx8RfQpexyAmpjSczvPBtLY.jpg" alt="">
-                <h3>دبل تشيز برجر</h3>
-                <p>قطعتين من البرجر المشوي مع الجبن والخيار</p>
-                <div class="buy">
-                    <div class="price">
-
-<!----------------------------------------------- سعر الدبل تشيز برجر ---------------------------------------------------->
-
-                        
-                        <h3 id="double-cheese-burger-actual-price">50</h3>
-
-<!------------------------------------------------------------------------------------------------------------------->
-                        
-                        <h3>جنية</h3>
-                    </div>
-                    <div class="counter" id="double-cheese-burger-counter">
-                        <h3>عدد الوجبات</h3>
-                        <input type="number" name="" id="double-cheese-burger-quantity" value="1" class="counter-display">
-                    </div>
-                </div>
-                <button class="add-to-card" id="double-cheese-burger-add">اضافة الى طلباتك</button>
-                <button class="remove-from-card" id="double-cheese-burger-remove">إزالة الصنف</button>
-            </div>
-            <div class="card normal-burger" id="normal-burger">
-                <img src="360_F_114668030_XtASybnK2Hx8RfQpexyAmpjSczvPBtLY.jpg" alt="">
-                <h3>برجر عادي</h3>
-                <p>قطعتين من البرجر المشوي مع الجبن والخيار</p>
-                <div class="buy">
-                    <div class="price" id="normal-burger-price">
-
-<!----------------------------------------- سعر البرجر العادي ------------------------------------------------------------>
-                        
-                        <h3 id="normal-burger-actual-price">30</h3>
-
-<!------------------------------------------------------------------------------------------------------------------->
-                        
-                        <h3>جنية</h3>
-                    </div>
-                    <div class="counter" id="normal-burger-counter">
-                        <h3>عدد الوجبات</h3>
-                        <input type="number" name="" id="normal-burger-quantity" value="1" class="counter-display">
-                    </div>
-                </div>
-                <button class="add-to-card" id="normal-burger-add">اضافة الى طلباتك</button>
-                <button class="remove-from-card" id="normal-burger-remove">إزالة الصنف</button>
-            </div>
-            <div class="card">
-                <img src="360_F_114668030_XtASybnK2Hx8RfQpexyAmpjSczvPBtLY.jpg" alt="">
-                <h3>دبل تشيز برجر</h3>
-                <p>قطعتين من البرجر المشوي مع الجبن والخيار</p>
-                <div class="buy">
-                    <h3>50 L.E</h3>
-                    <div class="counter">
-                        <h4>عدد الوجبات</h4>
-                        <input type="number" name="" id="" value="1" class="counter-display">
-                    </div>
-                </div>
-                <button class="add-to-card">اضافة الى طلباتك</button>
-            </div>
-            <div class="card">
-                <img src="360_F_114668030_XtASybnK2Hx8RfQpexyAmpjSczvPBtLY.jpg" alt="">
-                <h3>دبل تشيز برجر</h3>
-                <p>قطعتين من البرجر المشوي مع الجبن والخيار</p>
-                <div class="buy">
-                    <h3>50 L.E</h3>
-                    <div class="counter">
-                        <h4>عدد الوجبات</h4>
-                        <input type="number" name="" id="" value="1" class="counter-display">
-                    </div>
-                </div>
-                <button class="add-to-card">اضافة الى طلباتك</button>
-            </div>
-            <div class="card">
-                <img src="360_F_114668030_XtASybnK2Hx8RfQpexyAmpjSczvPBtLY.jpg" alt="">
-                <h3>دبل تشيز برجر</h3>
-                <p>قطعتين من البرجر المشوي مع الجبن والخيار</p>
-                <div class="buy">
-                    <h3>50 L.E</h3>
-                    <div class="counter">
-                        <h4>عدد الوجبات</h4>
-                        <input type="number" name="" id="" value="1" class="counter-display">
-                    </div>
-                </div>
-                <button class="add-to-card">اضافة الى طلباتك</button>
-            </div>
-
-        </div>
-    </div>
 
     <script src="main.js"></script>
 </body>
