@@ -48,19 +48,6 @@ showlist.onclick = ()=>{
 //------------------- التشيز برجر----------------------------- \\
 
 
-
-// ---------------- زرار الاضافة في التشيز برجر-------------------\\
-
-doubleCheeseBurgerAdd.onclick = ()=>{
-    doubleCheeseBurgerAdd.style.background = 'blue';
-    doubleCheeseBurgerAdd.style.display = 'none';
-    doubleCheeseBurgerRemove.style.display = 'block';
-    result =  (+doubleCheeseBurgerQuantity.value * +doubleCheeseBurgerActualPrice.innerHTML);
-    actualTotal.innerHTML = Math.abs(result + +actualTotal.innerHTML);
-    doubleCheeseBurgerCounter.style.display = 'none';
-    
-    //--------- زراير الزائد والناقص في الدبل تشيز برجر ------- \\
-
     doubleCheeseBurgerPlus.onclick = ()=>{
         let resPlus = (+doubleCheeseBurgerQuantity.value + 1)
         doubleCheeseBurgerQuantity.value = resPlus;
@@ -76,6 +63,19 @@ doubleCheeseBurgerAdd.onclick = ()=>{
             doubleCheeseBurgerMinus.style = 'display: none;';
         }
     }
+// ---------------- زرار الاضافة في التشيز برجر-------------------\\
+
+doubleCheeseBurgerAdd.onclick = ()=>{
+    doubleCheeseBurgerAdd.style.background = 'blue';
+    doubleCheeseBurgerAdd.style.display = 'none';
+    doubleCheeseBurgerRemove.style.display = 'block';
+    result =  (+doubleCheeseBurgerQuantity.value * +doubleCheeseBurgerActualPrice.innerHTML);
+    actualTotal.innerHTML = Math.abs(result + +actualTotal.innerHTML);
+    doubleCheeseBurgerCounter.style.display = 'none';
+    
+    //--------- زراير الزائد والناقص في الدبل تشيز برجر ------- \\
+
+
 
     // ----------------------ادخال التشيز برجر في القائمة------------\\
 
