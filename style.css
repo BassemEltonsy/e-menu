@@ -359,7 +359,7 @@ input::-webkit-inner-spin-button {
     width: 100%;
     height: 60px;
     align-items: center;
-    background-color: #760f0f;
+    background-color: #fff;
     overflow-x: scroll;
     /* border: 1px solid black; */
     text-align: left;
@@ -371,17 +371,16 @@ input::-webkit-inner-spin-button {
     height: 35px;
     width: auto;
     text-decoration: none;
-    background-color: rgb(208, 37, 37);
+    background-color: #fff;
     border-radius: 12px;
     margin: 10px 5px;
-    color: white;
+    color: teal;
     font-weight: 700;
     white-space: nowrap;
     line-height: 25px;
+    border: 1px solid teal;
 }
-::-webkit-scrollbar {
-    display: none;
-}
+
 .plus-icon , .minus-icon{
     font-size: 30px;
     /* border: 1px solid black; */
