@@ -144,11 +144,12 @@ th, td{
 
 .burger{
     margin-top: 60px;
-    background-color: #fff;
+    background-color: #ffffff;
     color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 95px;
 }
 .burger-content{
     padding-top: 10px;
@@ -157,6 +158,7 @@ th, td{
 .card{
     margin-top: 100px;
     width: 90%;
+    background-color: #fff;
     margin: auto;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
@@ -166,6 +168,11 @@ th, td{
     text-align: center;
     margin-top: 45px;
 }
+.card h3{
+    font-size: 25px;
+    margin-top: 10px;
+}
+
 .card img{
     width: 100%;
 }
@@ -193,20 +200,22 @@ th, td{
     gap: 10px;
 }
 .counter h3{
-    font-size: 20px;
+    font-size: 19px;
+    line-height: 21px;
     color: red;
 }
 .counter .counter-display{
     /* margin: 0px 20px; */
     border: 2px solid teal;
     padding: 2px 0px;
-    width: 50px;
+    width: 45px;
+    color: teal;
     height: 50px;
     font-size: 19px;
     font-weight: 700;
     border-radius: 10px;
     overflow: hidden;
-    padding-left: 18px;
+    padding-left: 13px;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -215,7 +224,7 @@ input::-webkit-inner-spin-button {
 }
 .add-to-card{
     padding: 10px 0px;
-    margin: 5px auto;
+    margin: 10px auto;
     border-radius: 10px;
     border: none;
     background-color: green;
@@ -307,17 +316,20 @@ input::-webkit-inner-spin-button {
 
 .orders-bar{
     height: 100vh;
-    width: 85%;
+    width: 95%;
     position: fixed;
     top: 0px;
-    left: -360px;
+    left: -390px;
     background-color: #fff;
-    padding: 20px;
+    padding: 20px 7px;
     /* display: none; */
     flex-direction: column;
     /* border: 1px solid black; */
     z-index: 200;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.orders-bar-header{
+    margin-left: 10px;
 }
 .orders-bar-header p{
     margin-bottom: 10px;
@@ -345,9 +357,9 @@ input::-webkit-inner-spin-button {
     top: 0px;
     right: 0px;
     width: 100%;
-    height: 80px;
+    height: 60px;
     align-items: center;
-    background-color: #ffb618;
+    background-color: #760f0f;
     overflow-x: scroll;
     /* border: 1px solid black; */
     text-align: left;
@@ -355,17 +367,43 @@ input::-webkit-inner-spin-button {
 
 }
 .top-nav-link{
-    padding: 10px 30px;
-    height: 50px;
+    padding: 5px 25px;
+    height: 35px;
     width: auto;
     text-decoration: none;
-    background-color: rgb(197, 3, 3);
-    border-radius: 19px;
+    background-color: rgb(208, 37, 37);
+    border-radius: 12px;
     margin: 10px 5px;
     color: white;
     font-weight: 700;
     white-space: nowrap;
+    line-height: 25px;
 }
 ::-webkit-scrollbar {
     display: none;
+}
+.plus-icon , .minus-icon{
+    font-size: 30px;
+    /* border: 1px solid black; */
+    border-radius: 30px;
+    height: 42px;
+    display: block;
+    width: 48px;
+    background-color: teal;
+    color: white;
+    align-items: center;
+    white-space:nowrap;
+    line-height: 35px;
+}
+.price{
+    font-size: 20px;
+    margin-left: 5px;
+}
+.orders-table{
+    /* border: 3px solid black; */
+    width: 350px;
+}
+.orders-table tr{
+    display: flex;
+    justify-content: space-between;
 }
