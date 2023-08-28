@@ -59,6 +59,8 @@ doubleCheeseBurgerAdd.onclick = ()=>{
     actualTotal.innerHTML = Math.abs(result + +actualTotal.innerHTML);
     doubleCheeseBurgerCounter.style.display = 'none';
     
+    }
+
     //--------- زراير الزائد والناقص في الدبل تشيز برجر ------- \\
 
     doubleCheeseBurgerPlus.onclick = ()=>{
@@ -75,7 +77,6 @@ doubleCheeseBurgerAdd.onclick = ()=>{
         if(doubleCheeseBurgerQuantity.value < 1){
             doubleCheeseBurgerMinus.style = 'display: none;';
         }
-    }
 
     // ----------------------ادخال التشيز برجر في القائمة------------\\
 
