@@ -406,3 +406,8 @@ input::-webkit-inner-spin-button {
     display: flex;
     justify-content: space-between;
 }
+
+.active{
+    background-color: teal;
+    color: white;
+}
