@@ -63,6 +63,7 @@ showlist.onclick = ()=>{
             doubleCheeseBurgerMinus.style = 'display: none;';
         }
     }
+
 // ---------------- زرار الاضافة في التشيز برجر-------------------\\
 
 doubleCheeseBurgerAdd.onclick = ()=>{
@@ -99,7 +100,7 @@ doubleCheeseBurgerAdd.onclick = ()=>{
 // -----------------زرار ازالة العنصر-------------- \\
 
 doubleCheeseBurgerRemove.onclick = ()=>{
-    doubleCheeseBurgerAdd.style.background = 'green';
+    doubleCheeseBurgerAdd.style.background = 'orangered';
     doubleCheeseBurgerAdd.innerText ='اضافة الى طلباتك';
     doubleCheeseBurgerRemove.style.display = 'none';
     result = (+doubleCheeseBurgerActualPrice.innerHTML * +doubleCheeseBurgerQuantity.value);
@@ -133,7 +134,7 @@ normalBurgerAdd.onclick = ()=>{
     //--------------- زرار ازالة البرجر العادي --------------------\\
     
 normalBurgerRemove.onclick = ()=>{
-    normalBurgerAdd.style.background = 'green';
+    normalBurgerAdd.style.background = 'orangered';
     normalBurgerAdd.innerText = 'اضافة الى طلباتك';
     normalBurgerRemove.style.display = 'none';
     normalBurgerAdd.style.display = 'block';
