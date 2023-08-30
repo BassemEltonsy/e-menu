@@ -39,7 +39,7 @@ showlist.onclick = ()=>{
         moode = 1;
     }else{
         ordersBar.style.left = '-390px';
-        showlist.innerHTML = 'عرض القائمة';
+        showlist.innerHTML = 'عرض طلباتك';
         moode = 0;
     }
 
